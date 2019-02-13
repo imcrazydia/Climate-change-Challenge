@@ -1,0 +1,439 @@
+@@import "https://fonts.googleapis.com/css?family=Play";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(33, 5vw);
+  grid-gap: 1.5rem;
+  background-color: black;
+  cursor: pointer;
+}
+
+#background {
+  background-image: url("../img/back.jpg");/* foto van: Tyler Lastovich */
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 1;
+  grid-row-end: 10;
+}
+#background2 {
+  background-image: url("../img/ground.jpg");/* foto van: 123rf.com */
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 9;
+  grid-row-end: 21;
+}
+#background3 {
+  background-image: url("../img/ground.jpg");/* foto van: 123rf.com */
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 20;
+  grid-row-end: 34;
+}
+
+.titel {
+  font-size: 35px;
+  grid-column-start: 2;
+  grid-column-end: 18;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: center;
+  border: solid;
+  background-color: #faf7f7;
+}
+
+.main {
+  grid-column-start: 1;
+  grid-column-end: 15;
+  grid-row-start: 8;
+  grid-row-end: 20;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  background-color: #faf7f7;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 5vw);
+  grid-gap: 1.5rem;
+}
+
+.box1 {
+  grid-column-start: 14;
+  grid-column-end: 19;
+  grid-row-start: 8;
+  grid-row-end: 12;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  background-color: #faf7f7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.box2 {
+  grid-column-start: 14;
+  grid-column-end: 19;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  background-color: #faf7f7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.box3 {
+  grid-column-start: 14;
+  grid-column-end: 19;
+  grid-row-start: 16;
+  grid-row-end: 20;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  background-color: #faf7f7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tempBox{
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  margin-top: 50px;
+}
+.temp {
+  border: solid;
+  border-color: gray;
+  background-color: #faf7f7;
+}
+
+.fakeTempBox{
+  grid-column-start: 11;
+  grid-column-end: 16;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  margin-top: 50px;
+}
+#fakeTemp {
+  border: solid;
+  border-color: gray;
+  background-color: #faf7f7;
+}
+
+#video {
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border: solid;
+  border-color: grey;
+  width: 90%;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+#videoText {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: 'Play', sans-serif;
+}
+#videoText2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  margin-left: 50px;
+  margin-top: 60px;
+  font-family: 'Play', sans-serif;
+}
+
+#gevolgen {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-left: 20px;
+  margin-top: 70px;
+  text-decoration: underline;
+  font-family: 'Play', sans-serif;
+}
+.gevolgenText {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 13;
+  margin-left: 20px;
+  font-family: 'Play', sans-serif;
+}
+.gevolgenTitel {
+  color: #0077b3;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
+}
+
+#mainImage1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 13;
+  width: 250px;
+  margin-left: 10%;
+  border: solid;
+}
+#mainImage2 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  margin-bottom: 100px;
+  width: 410px;
+  height: 270px;
+  margin-top: 50px;
+  border: solid;
+}
+#mainImage3 {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 10;
+  grid-row-end: 13;
+  width: 250px;
+  height: 185px;
+  margin-left: 10%;
+  border: solid;
+}
+
+#slideshow {
+width: 285px;
+height: 190px;
+margin-top: 3px;
+margin-left: 3px;
+border: solid;
+}
+#box1Text {
+  font-family: 'Play', sans-serif;
+  margin-left: 3px;
+}
+
+.list{
+  margin-left: -6px;
+  margin-right: 8px;
+}
+.titelTips{
+  font-family: 'Play', sans-serif;
+  margin-left: 20px;
+}
+.tipLinks {
+  color: black;
+  text-decoration: none;
+  font-family: 'Play', sans-serif;
+}
+.tipLinks:hover {
+  color: blue;
+  text-decoration: underline;
+  font-family: 'Play', sans-serif;
+}
+
+.planetLogo {
+  margin-left: 65px;
+  width: 60%;
+}
+.planetvideo {
+  width: 280px;
+  margin-left: 5px;
+  border: solid;
+  border-radius: 6px;
+}
+.planetText {
+  font-family: 'Play', sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-left: 32px;
+  font-weight: bold;
+}
+.planetText:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.formBox {
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 20;
+  grid-row-end: 33;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #faf7f7;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(16, 5vw);
+  grid-gap: 0.2em;
+}
+.vragenTitel {
+  font-family: 'Play', sans-serif;
+  font-size: 100px;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 25px;
+}
+.afvalVragen {
+  font-family: 'Play', sans-serif;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  margin-left: 20px;
+}
+.afvalVragenAntwoorden {
+  margin-left: 100px;
+}
+.energieVraag {
+  font-family: 'Play', sans-serif;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 10;
+  margin-left: 70px;
+}
+
+.dierenVragen {
+  font-family: 'Play', sans-serif;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 12;
+  grid-row-end: 17;
+  margin-left: 85px;
+}
+.dierenVragenAntwoorden {
+  margin-left: 185px;
+}
+
+.verstuur {
+  font-family: 'Play', sans-serif;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 16;
+  grid-row-end: 17;
+  align-self: center;
+  margin-left: 110px;
+}
+#vestuurKnop {
+  width: 80px;
+  height: 40px;
+}
+
+#formGif {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 150px;
+  margin-top: 35px;
+  margin-left: 126px;
+}
+#formGif2 {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 150px;
+  margin-top: 35px;
+}
+
+#afvalFoto1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    width: 246px;
+    border: solid;
+    border-radius: 6px;
+}
+#afvalFoto2 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    width: 350px;
+    border: solid;
+    border-radius: 6px;
+    margin-top: 35px;
+}
+
+#energieFoto1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    width: 247px;
+    border: solid;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+#energieFoto2 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    width: 345px;
+    border: solid;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#dierFoto1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 17;
+    width: 247px;
+    border: solid;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+#dierFoto2 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 17;
+    width: 345px;
+    border: solid;
+    border-radius: 6px;
+    margin-top: 67px;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 33;
+  grid-row-end: 34;
+  border: solid;
+  border-color: gray;
+  border-radius: 6px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #faf7f7;
+}
+.footerText {
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
