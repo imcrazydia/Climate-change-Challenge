@@ -1,3 +1,4 @@
 # Climate-change-Challenge
 this repository is a project for school.
-![Alt text](relative/path/to/idee.png?raw=true "Idee")
+
+![Het idee dat ik had voor mijn website](https://github.com/imcrazydia/Climate-change-Challenge/blob/master/idea/idee.png)
